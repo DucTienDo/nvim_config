@@ -15,18 +15,19 @@ local function map(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, opts)
   end
 end
+
 -- Bufferline:
 -- move buffer backward or forward
 map("n", ">B", "<cmd>BufferLineMoveNext<cr>", { desc = "Move Buffer forward" })
 map("n", "<B", "<cmd>BufferLineMovePrev<cr>", { desc = "Move Buffer backward" })
 
--- Resize window using <ctrl> arrow keys
+-- Resize window using arrow keys
 map("n", "<Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
 map("n", "<Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 map("n", "<Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
 map("n", "<Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
--- Treesitter Surfer
+-- Treesitter Swap
 map("n", "<c-Right>", function()
   syntax_tree_surfer.move("n", false)
 end, { desc = "Swap next tree-sitter object" })
@@ -40,6 +41,7 @@ map("n", "<c-Up>", function()
   syntax_tree_surfer.move("n", true)
 end, { desc = "Swap previous tree-sitter object" })
 
+-- Treesitter Surf
 map("x", "<Up>", function()
   syntax_tree_surfer.surf("next", "visual")
 end, { desc = "Surf next tree-sitter object" })
