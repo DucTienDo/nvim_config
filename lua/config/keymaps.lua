@@ -16,6 +16,10 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
+--Google search
+map("x", "<leader>G", "<Plug>SearchVisual", { desc = "Search Google" })
+map("n", "<leader>G", "<Plug>SearchNormal", { desc = "Search Google with text object" })
+
 -- Bufferline:
 -- move buffer backward or forward
 map("n", ">B", "<cmd>BufferLineMoveNext<cr>", { desc = "Move Buffer forward" })

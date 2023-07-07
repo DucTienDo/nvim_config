@@ -39,3 +39,5 @@
 -- vim.api.nvim_set_hl(0, "CmpItemKindInterface", { fg = "#D8EEEB", bg = "#58B5A8" })
 -- vim.api.nvim_set_hl(0, "CmpItemKindColor", { fg = "#D8EED8", bg = "#58B5A8" })
 -- vim.api.nvim_set_hl(0, "CmpItemKindTypeParameter", { fg = "#D8EEC0", bg = "#58B5A8" })
+
+vim.api.nvim_set_var("browser_search_default_engine", "google")

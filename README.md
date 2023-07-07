@@ -1,12 +1,9 @@
-# 💤 LazyVim
-
 ## Make a backup of your current Neovim files:
 
 ### required
 ```bash
 mv ~/.config/nvim ~/.config/nvim.bak
 ```
-
 ### optional but recommended
 ```bash
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
@@ -14,9 +11,7 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
 
-
-
-## Clone the starter
+## Clone the repo
 ```bash
 git clone https://github.com/DucTienDo/nvim_config ~/.config/nvim
 ```
