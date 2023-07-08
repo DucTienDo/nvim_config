@@ -1,13 +1,11 @@
 return {
   {
     "folke/which-key.nvim",
-    opts = {
-      operators = {
-        ["<leader>G"] = "Google search",
-      },
-    },
     config = function(_, opts)
       local wk = require("which-key")
+      opts.operators = { ["<leader>G"] = "Google search" }
+      wk.setup(opts)
+      wk.register(opts.defaults)
       wk.register({
         ["<leader>"] = {
           a = {
