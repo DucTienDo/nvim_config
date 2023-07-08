@@ -32,4 +32,4 @@ rm -rf ~/.config/nvim/.git
 nvim
 ```
 
-##### Dont forget to run `:checkhealth` to make sure everthing work fine
+##### Don't forget to run `:checkhealth` to make sure everything work fine
