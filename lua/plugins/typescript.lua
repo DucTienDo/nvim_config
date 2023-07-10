@@ -12,6 +12,10 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = { "jose-elias-alvarez/typescript.nvim" },
     opts = {
+      -- options for vim.diagnostic.config()
+      diagnostics = {
+        update_in_insert = false,
+      },
       -- make sure mason installs the server
       servers = {
         ---@type lspconfig.options.tsserver
@@ -126,13 +130,6 @@ return {
           }
         end
       end
-    end,
-  },
-  {
-    "williamboman/mason.nvim",
-    opts = function(_, opts)
-      opts.ensure_installed = opts.ensure_installed or {}
-      table.insert(opts.ensure_installed, "js-debug-adapter")
     end,
   },
 }

@@ -10,7 +10,6 @@ return {
         sources = {
           nls.builtins.formatting.stylua,
           nls.builtins.formatting.shfmt,
-          nls.builtins.code_actions.eslint_d,
           nls.builtins.formatting.prettierd,
         },
       }
