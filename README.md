@@ -42,3 +42,4 @@ nvim
 - [Neogen](https://github.com/danymat/neogen)
 - [Neoscroll](https://github.com/karb94/neoscroll.nvim) smooth scroll when using `C-D`, `C-U`, etc.
 - [Google search](https://github.com/voldikss/vim-browser-search) quick google search
+- everything else: check the [Lazyvim Docs](https://www.lazyvim.org/)
