@@ -33,3 +33,12 @@ nvim
 ```
 
 ##### Don't forget to run `:checkhealth` to make sure everything work fine
+
+#### Notes:
+
+- [Hardtime](https://github.com/m4xshen/hardtime.nvim) is enable
+- [Wakatime](https://wakatime.com/neovim) is used to time tracking
+- [Peak](https://github.com/toppair/peek.nvim) is used for MD preview (Deno is required)
+- [Neogen](https://github.com/danymat/neogen)
+- [Neoscroll](https://github.com/karb94/neoscroll.nvim) smooth scroll when using `C-D`, `C-U`, etc.
+- [Google search](https://github.com/voldikss/vim-browser-search) quick google search
