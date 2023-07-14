@@ -1,6 +1,7 @@
 return {
   {
     "m4xshen/hardtime.nvim",
+    -- enabled = false,
     opts = {
       max_time = 1000,
       max_count = 2,
@@ -23,8 +24,6 @@ return {
         ["d"] = { "n" },
         ["x"] = { "n" },
         ["X"] = { "n" },
-        ["y"] = { "n" },
-        ["Y"] = { "n" },
         ["p"] = { "n" },
         ["P"] = { "n" },
       },
@@ -42,6 +41,7 @@ return {
         ["<C-N>"] = { "n", "x" },
         ["<C-P>"] = { "n", "x" },
       },
+      disabled_keys = {},
       disabled_filetypes = { "qf", "netrw", "NvimTree", "lazy", "mason", "neo-tree", "lazyterm", "Outline" },
     },
   },
